@@ -2,18 +2,28 @@
   <div class="container-fluid">
     <div class="hero-section d-flex justify-center align-center">
       <v-container class="d-flex">
-        <v-card flat color="transparent" class="mx-auto ml-0" max-width="344">
+        <v-card flat color="transparent" class="mx-auto ml-0" max-width="400">
+          <v-card-title
+            style="
+              font-family: Sue Ellen Francisco;
+              font-weight: 400;
+              line-height: 54.15px;
+              font-size: 50px;
+            "
+            class="text-white font-italic"
+          >
+            Need Help ....
+          </v-card-title>
           <v-card-text>
-            <div>Word of the Day</div>
-            <p class="text-h4 text--primary">be•nev•o•lent</p>
-            <p>adjective</p>
-            <div class="text--primary">
-              well meaning and kindly.<br />
-              "a benevolent smile"
-            </div>
+            <p class="text-h4 text-white welcome-text">Being Life Saver For Someone</p>
           </v-card-text>
           <v-card-actions>
-            <v-btn color="deep-purple-accent-4" variant="text"> Learn More </v-btn>
+            <v-btn variant="outlined" rounded style="background-color: #ff6d6d; color: white">
+              Donate
+            </v-btn>
+            <v-btn variant="outlined" rounded style="background-color: #ffffff; color: #2e4049">
+              Discover
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-container>
@@ -43,5 +53,11 @@ export default defineComponent({
 .hero-section {
   background: linear-gradient(103.5deg, rgba(19, 35, 45, 0.69) 3.46%, rgba(29, 39, 45, 0) 51.8%);
   height: 970px;
+}
+.welcome-text {
+  font-family: 'Shippori Mincho';
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 57.47px;
 }
 </style>
