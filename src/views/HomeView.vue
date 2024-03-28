@@ -18,10 +18,20 @@
             <p class="text-h4 text-white welcome-text">Being Life Saver For Someone</p>
           </v-card-text>
           <v-card-actions>
-            <v-btn variant="outlined" rounded style="background-color: #ff6d6d; color: white">
+            <v-btn
+              id="card-actionbtn"
+              variant="outlined"
+              rounded
+              style="background-color: #ff6d6d; color: white"
+            >
               Donate
             </v-btn>
-            <v-btn variant="outlined" rounded style="background-color: #ffffff; color: #2e4049">
+            <v-btn
+              id="card-actionbtn"
+              variant="outlined"
+              rounded
+              style="background-color: #ffffff; color: #2e4049"
+            >
               Discover
             </v-btn>
           </v-card-actions>
@@ -59,5 +69,11 @@ export default defineComponent({
   font-weight: 800;
   font-size: 90px;
   line-height: 57.47px;
+}
+#card-actionbtn {
+  font-family: 'Work Sans';
+  font-size: 18px;
+  line-height: 21.11px;
+  font-weight: 500;
 }
 </style>
