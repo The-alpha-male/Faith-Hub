@@ -38,53 +38,23 @@
         </v-card>
       </v-container>
     </div>
-  </div>
-  <div>
-    <v-container>
-      <v-row no-gutters>
-        <v-col cols="4" class="no-space" v-for="carditem in inforCards" :key="carditem.color">
-          <div
-            :style="{
-              width: '401px',
-              height: '351px',
-              backgroundColor: carditem.color,
-              marginTop: '-100px',
-              Padding: '67px, 40px, 68px, 40px'
-            }"
-            class="d-flex justify-center align-center"
-          >
-            <v-card color="transparent" flat height="216px" width="321px">
-              <v-card-title class="mt-2 card-title">
-                {{ carditem.title }}
-              </v-card-title>
-              <v-card-text>
-                {{ carditem.content }}
-              </v-card-text>
-              <v-card-actions v-if="carditem.title === 'Education'">
-                <v-btn class="" style="background-color: #ffffff" rounded size="large">
-                  Discover
-                </v-btn>
-              </v-card-actions>
-              <v-card-actions v-else>
-                <a href="" style="color: #ffffff">JOIN ORGANIZATION</a>
-              </v-card-actions>
-            </v-card>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
+    <card-section-vue />
   </div>
 </template>
 
 <script>
+// import CardSectionV
 import { defineComponent } from 'vue'
+import CardSectionVue from '@/components/CardSection.vue'
 
 // Components
 
 export default defineComponent({
   name: 'HomeView',
 
-  components: {},
+  components: {
+    CardSectionVue
+  },
 
   data: () => ({
     inforCards: [
@@ -115,6 +85,10 @@ export default defineComponent({
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 .hero-section {
   background: linear-gradient(103.5deg, rgba(19, 35, 45, 0.69) 3.46%, rgba(29, 39, 45, 0) 51.8%);
