@@ -4,7 +4,7 @@ This project is a collaboration between **Ronny Munene** and **William Karia**.
 
 ## Contact Information:
 
-- **Ronny Munene**
+- ***Ronny Munene***
   - Email: ronnymunene@outlook.com
 
 - **William Karia**
