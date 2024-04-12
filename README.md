@@ -10,4 +10,4 @@ This project is a collaboration between **Ronny Munene** and **William Karia**.
 - **William Karia**
   - Email: willykaria77@gmail.com
 
-Feel free to reach out to us via email if you have any questions or inquiries regarding this project
+Feel free to reach out to us via email if you have any questions or inquiries regarding this project.
